@@ -1,6 +1,10 @@
 ﻿//snack1();
 //snack2();
-snack3();
+//snack3();
+//snack4();
+snack5();
+
+
 
 void snack1()
 {
@@ -77,5 +81,26 @@ void snack3()
     Console.WriteLine("la somma dei tuoi 10 numeri è:");
     int sum = ints.Sum();
     Console.WriteLine(sum);
+
+}
+
+void snack4()
+{
+    int[] ints = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+    int sum = ints.Sum();
+    int media = sum / ints.Length;
+
+    Console.WriteLine("la somma di un array che va da 2 a 10 è:");
+
+    Console.WriteLine(sum);
+
+    Console.WriteLine("La media di un array che va da 2 a 10 è:");
+
+    Console.WriteLine(media);
+
+}
+void snack5()
+{
 
 }
