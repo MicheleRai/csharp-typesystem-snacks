@@ -7,9 +7,8 @@
 //snack7();
 //snack8();
 //snack9();
-snack10();
-
-
+//snack10();
+snack11();
 
 
 
@@ -271,4 +270,21 @@ void snack10()
 
         Console.WriteLine();
     }
+}
+
+void snack11()
+{
+    Console.WriteLine("Inserisci la prima parola: ");
+    string str1 = Console.ReadLine() ?? "";
+    Console.WriteLine("Inserisci la seconda parola: ");
+    string str2 = Console.ReadLine() ?? "";
+
+    VerificaLunghezza(str1, str2);
+
+}
+void VerificaLunghezza(string str1, string str2)
+{
+    if (str1.Length == str2.Length) Console.WriteLine($"{str1}, {str2}");
+    else if (str1.Length > str2.Length) Console.WriteLine($"La prima parola é piú lunga: {str1}");
+    else Console.WriteLine($"La seconda parola é piú lunga: {str2}");
 }
