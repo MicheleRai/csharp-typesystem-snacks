@@ -4,7 +4,9 @@
 //snack4();
 //snack5();
 //snack6();
-snack7();
+//snack7();
+snack8();
+
 
 
 void snack1()
@@ -157,5 +159,29 @@ void snack7()
     {
         Console.WriteLine(item.ToString());
     }
+
+}
+
+void snack8()
+{
+    var ints = new int[10];
+    var somma = 0;
+
+    for (int i = 0; i < 10; i++)
+    {
+        Console.WriteLine("Inserisci un numero");
+        ints[i] = Convert.ToInt32(Console.ReadLine());
+
+    }
+    for (int i = 0;i < ints.Length; i++)
+    {
+        if ((i + 2) % 2 == 0)
+        {
+            somma += ints[i];
+        }
+    }
+    Console.WriteLine("La somma dei numeri dispari inseriti da te è:");
+
+    Console.WriteLine(somma);
 
 }
