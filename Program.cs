@@ -2,7 +2,10 @@
 //snack2();
 //snack3();
 //snack4();
-snack5();
+//snack5();
+using System;
+
+snack6();
 
 
 
@@ -73,7 +76,7 @@ void snack3()
     for (int i = 0; i < 10; i++)
     {
 
-        Console.WriteLine("Inserisci il primo numero");
+        Console.WriteLine("Inserisci un numero");
         ints[i] = Convert.ToInt32(Console.ReadLine());
 
     }
@@ -102,5 +105,42 @@ void snack4()
 }
 void snack5()
 {
+    Console.WriteLine("Inserisci un numero");
+    int num = Convert.ToInt32(Console.ReadLine());
+
+    if (num % 2 == 0)
+    {
+        Console.WriteLine("Il numero inserito è pari");
+        Console.WriteLine(num);
+    }
+    else
+    {
+        Console.WriteLine("Il numero da te inserito non è pari quindi il numero pari piu vicino a quello inserito è:");
+        Console.WriteLine(num+1);
+
+    }
+
+}
+
+void snack6()
+
+{
+    Console.WriteLine("Controlla se sei invitato alla festa");
+
+    string[] invitati = { "marco", "giovanni", "edoardo", "piero", "michele", "giacomo", "andrea" };
+
+    Console.WriteLine("Inserisci il tuo nome");
+
+    string nome = Console.ReadLine() ?? "";
+
+    if (invitati.Contains(nome.ToLower()))
+    {
+        Console.WriteLine("Prego puoi entrare e benvenuto alla festa!");
+    }
+    else
+    {
+        Console.WriteLine("Purtroppo non sei invitato, mi spiace");
+
+    }
 
 }
