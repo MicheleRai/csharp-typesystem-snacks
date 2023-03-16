@@ -5,7 +5,9 @@
 //snack5();
 //snack6();
 //snack7();
-snack8();
+//snack8();
+snack9();
+
 
 
 
@@ -183,5 +185,69 @@ void snack8()
     Console.WriteLine("La somma dei numeri dispari inseriti da te è:");
 
     Console.WriteLine(somma);
+
+}
+void snack9()
+{
+    int[] ints = new int[50];
+    var somma = 0;
+    int i = 0;
+
+    while (somma < 50)
+    {
+        Console.WriteLine("Inserisci un numero: ");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        if ((somma + num) < 50)
+        {
+            ints[i] = num;
+            i++;
+            somma += num;
+
+            Console.WriteLine("La somma attuale è:");
+
+            Console.WriteLine(somma);
+
+            Console.WriteLine("L'array creato è:");
+
+            for (int j = 0; j < i; j++)
+            {
+                Console.WriteLine($"{ints[j]} ");
+            }
+
+        }
+        else if ((somma + num) == 50)
+        {
+            Console.WriteLine("La somma dei numeri da te inseriti ha raggiunto 50");
+
+            Console.WriteLine("L'array creato è:");
+
+            for (int j = 0; j < i; j++)
+            {
+                Console.WriteLine($"{ints[j]} ");
+            }
+        }
+        else
+        {
+            Console.WriteLine("la somma supererebbe 50 quindi per piacere inserire un altro numero");
+
+            Console.WriteLine("La somma attuale è:");
+
+            Console.WriteLine(somma);
+
+            Console.WriteLine("L'array creato è:");
+
+            for (int j = 0; j < i; j++)
+            {
+                Console.WriteLine($" {ints[j]} ");
+            }
+
+
+        }
+    }
+    void snack10()
+    {
+
+    }
 
 }
