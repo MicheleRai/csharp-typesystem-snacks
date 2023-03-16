@@ -3,10 +3,8 @@
 //snack3();
 //snack4();
 //snack5();
-using System;
-
-snack6();
-
+//snack6();
+snack7();
 
 
 void snack1()
@@ -141,6 +139,23 @@ void snack6()
     {
         Console.WriteLine("Purtroppo non sei invitato, mi spiace");
 
+    }
+}
+void snack7()
+{
+    var ints = new int[6];
+    for (int i = 0; i < 6; i++)
+    {
+
+        Console.WriteLine("Inserisci un numero");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        if (num % 2 != 0) ints[i] = num;
+
+    }
+    foreach (var item in ints)
+    {
+        Console.WriteLine(item.ToString());
     }
 
 }
