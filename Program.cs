@@ -1,5 +1,6 @@
 ﻿//snack1();
-snack2();
+//snack2();
+snack3();
 
 void snack1()
 {
@@ -63,5 +64,18 @@ void snack3()
     Console.WriteLine("Calcola la somma di 10 numeri");
 
 
+    var ints = new int[10];
+
+    for (int i = 0; i < 10; i++)
+    {
+
+        Console.WriteLine("Inserisci il primo numero");
+        ints[i] = Convert.ToInt32(Console.ReadLine());
+
+    }
+
+    Console.WriteLine("la somma dei tuoi 10 numeri è:");
+    int sum = ints.Sum();
+    Console.WriteLine(sum);
 
 }
