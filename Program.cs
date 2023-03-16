@@ -8,7 +8,8 @@
 //snack8();
 //snack9();
 //snack10();
-snack11();
+//snack11();
+snack12();
 
 
 
@@ -287,4 +288,15 @@ void VerificaLunghezza(string str1, string str2)
     if (str1.Length == str2.Length) Console.WriteLine($"{str1}, {str2}");
     else if (str1.Length > str2.Length) Console.WriteLine($"La prima parola é piú lunga: {str1}");
     else Console.WriteLine($"La seconda parola é piú lunga: {str2}");
+}
+void snack12()
+{
+    Console.WriteLine("Inserisci un numero: ");
+    int num = Convert.ToInt32(Console.ReadLine());
+   
+    IsEvenOrOdd(num);
+}
+void IsEvenOrOdd(int num)
+{
+    Console.WriteLine($"Il numero {num} é {(num % 2 == 0 ? "pari" : "dispari")}");
 }
